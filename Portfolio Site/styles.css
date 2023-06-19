@@ -1,0 +1,217 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.content p {
+  font-size: 32px;
+}
+.content h1 {
+  font-size: 54px;
+}
+.content h3 {
+  font-size: 48px;
+}
+.content ul {
+  font-size: 32px;
+}
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+h1 {
+  font-size: 64px;
+  text-align: center;
+}
+ul {
+  padding-left: 15px;
+  text-align: left;
+  list-style-position: inside;
+  width: 100%;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Home Page Styles */
+#home {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 80px 0;
+}
+
+#home .content {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+/* About Page Styles */
+#about {
+  background-color: #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+
+/* Projects Page Styles */
+#projects {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Contact Page Styles */
+#contact {
+  background-color: #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+
+#contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background-color: #ff5f6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff355e;
+}
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  /* Desktop Styles */
+  #home {
+    padding: 120px 0;
+  }
+
+  #home .content {
+    max-width: 800px;
+  }
+
+  #about,
+  #projects,
+  #contact {
+    padding: 120px 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  #about .content {
+    text-align: center;
+  }
+
+  #projects .content {
+    text-align: center;
+  }
+
+  #contact-form {
+    margin: 0;
+  }
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f0f0f0;
+}
